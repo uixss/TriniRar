@@ -2,8 +2,6 @@
 
 **Generador de exploits para vulnerabilidades conocidas en WinRAR y Windows Library.**
 
-Este script CLI permite crear archivos ZIP o RAR maliciosos para simular ataques reales y probar defensas de sistemas Windows.
-
 > ⚠️ **Este proyecto es solo para uso educativo y entornos con autorización.**
 
 ---
@@ -25,9 +23,6 @@ Este script CLI permite crear archivos ZIP o RAR maliciosos para simular ataques
 - Python 3.7 o superior
 - [`rar.exe`](https://www.win-rar.com/download.html) en el `PATH` (solo para `cve-dual`)
 - Acceso con permisos de Administrador para crear symlinks en Windows
-- Opcional:
-  - [Responder](https://github.com/lgandx/Responder)
-  - [ntlmrelayx](https://github.com/dirkjanm/ntlmrelayx)
 
 ---
 
@@ -116,22 +111,7 @@ Para pruebas seguras, puedes dejar que el script cree un ejecutable falso:
 python main.py cve-dual --payload dummy.exe
 ```
 
----
 
-## 🛑 Advertencia legal
-
-Este proyecto está diseñado con fines:
-
-- ✅ Educativos
-- ✅ Red Team internos
-- ✅ Investigación en ciberseguridad
-- ✅ CTFs con entorno controlado
-
-Queda prohibido su uso para:
-
-- ❌ Actividades maliciosas
-- ❌ Acceso no autorizado
-- ❌ Daño a terceros
 
 ---
 
